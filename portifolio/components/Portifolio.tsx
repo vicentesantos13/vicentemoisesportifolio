@@ -11,6 +11,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Header } from "./Header";
 import { profile } from "@/data/profile";
+import { Hero } from "./Hero";
 
 // ===== Dados =====
 
@@ -111,26 +112,8 @@ export default function Page() {
           <Header setTheme={setTheme} theme={theme}/>
 
           {/* Coluna de conteúdo */}
-          <main className="space-y-10">
-            {/* Hero */}
-            <Card className="backdrop-blur">
-              <CardContent className="p-6">
-                <h2
-                //   initial={prefersReduced ? false : { opacity: 0, y: 12 }}
-                //   animate={prefersReduced ? { opacity: 1 } : { opacity: 1, y: 0 }}
-                //   transition={{ duration: 0.5 }}
-                  className="text-3xl font-bold tracking-tight"
-                >
-                  Olá, eu sou{" "}
-                  <span className="text-transparent bg-clip-text bg-linear-to-r from-emerald-500 via-sky-500 to-indigo-500">
-                    {profile.name}
-                  </span>
-                </h2>
-                <p className="mt-2 max-w-2xl text-slate-600 dark:text-slate-300">
-                  {profile.tagline}
-                </p>
-              </CardContent>
-            </Card>
+          <main className="">
+          <Hero />
 
             {/* Marquee de tecnologias */}
             <Card id="stack" className="backdrop-blur">
@@ -165,7 +148,7 @@ export default function Page() {
             </Card>
 
             {/* Projetos */}
-            <section id="projects" className="space-y-4">
+            {/* <section id="projects" className="space-y-4">
               <SectionTitle>Projetos em destaque</SectionTitle>
               {projects.map((p) => (
                 <Link
@@ -206,10 +189,10 @@ export default function Page() {
                   </Card>
                 </Link>
               ))}
-            </section>
+            </section> */}
 
             {/* Experiência */}
-            <Card id="experience" className="backdrop-blur">
+            {/* <Card id="experience" className="backdrop-blur">
               <CardHeader>
                 <CardTitle>Experiência</CardTitle>
               </CardHeader>
@@ -233,10 +216,10 @@ export default function Page() {
                   ))}
                 </ol>
               </CardContent>
-            </Card>
+            </Card> */}
 
             {/* Educação & Certificações */}
-            <Card id="education" className="backdrop-blur">
+            {/* <Card id="education" className="backdrop-blur">
               <CardHeader>
                 <CardTitle>Educação & Certificações</CardTitle>
               </CardHeader>
@@ -263,10 +246,10 @@ export default function Page() {
                   </div>
                 </div>
               </CardContent>
-            </Card>
+            </Card> */}
 
             {/* Contato */}
-            <Card id="contact" className="text-center backdrop-blur">
+            {/* <Card id="contact" className="text-center backdrop-blur">
               <CardContent className="p-6">
                 <h2 className="text-xl font-semibold">Vamos conversar?</h2>
                 <p className="mt-2 text-slate-600 dark:text-slate-300">
@@ -288,7 +271,7 @@ export default function Page() {
                   </Button>
                 </div>
               </CardContent>
-            </Card>
+            </Card> */}
 
             <footer className="pb-6 text-center text-sm text-slate-500">
               © {new Date().getFullYear()} {profile.name}

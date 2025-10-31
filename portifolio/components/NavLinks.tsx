@@ -9,35 +9,35 @@ export const NavLinks = ({ theme }: Props) => (
       text="Projetos"
       className={` ${
         theme === "dark" ? "text-white" : "text-black"
-      } opacity-90 hover:opacity-100 text-left`}
+      } opacity-90 hover:opacity-100 text-left cursor-pointer`}
       id="projects"
     />
     <ScrollToBtn
       text="Experiência"
       className={` ${
         theme === "dark" ? "text-white" : "text-black"
-      } opacity-90 hover:opacity-100 text-left`}
+      } opacity-90 hover:opacity-100 text-left cursor-pointer`}
       id="experience"
     />
     <ScrollToBtn
       text="Educação"
       className={` ${
         theme === "dark" ? "text-white" : "text-black"
-      } opacity-90 hover:opacity-100 text-left`}
+      } opacity-90 hover:opacity-100 text-left cursor-pointer`}
       id="education"
     />
     <ScrollToBtn
       text="Tecnologias"
       className={` ${
         theme === "dark" ? "text-white" : "text-black"
-      } opacity-90 hover:opacity-100 text-left`}
+      } opacity-90 hover:opacity-100 text-left cursor-pointer`}
       id="stack"
     />
     <ScrollToBtn
       text="Contato"
       className={` ${
         theme === "dark" ? "text-white" : "text-black"
-      } opacity-90 hover:opacity-100 text-left`}
+      } opacity-90 hover:opacity-100 text-left cursor-pointer`}
       id="contact"
     />
   </nav>
