@@ -1,17 +1,13 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
-import Image from "next/image";
-// import { motion, useReducedMotion } from "framer-motion";
 
 // shadcn/ui
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
+
 import { Header } from "./Header";
 import { profile } from "@/data/profile";
 import { Hero } from "./Hero";
+import { Technologies } from "./Technologies";
 
 // ===== Dados =====
 
@@ -45,20 +41,7 @@ const projects = [
   },
 ];
 
-const techs = [
-  "React",
-  "Next.js",
-  "TypeScript",
-  "Tailwind CSS",
-  "Node.js",
-  "Prisma",
-  "PostgreSQL",
-  "Radix",
-  "Shadcn",
-  "Framer Motion",
-  "TanStack",
-  "Playwright",
-];
+
 
 const experience = [
   {
@@ -114,38 +97,8 @@ export default function Page() {
           {/* Coluna de conteúdo */}
           <main className="">
           <Hero />
-
-            {/* Marquee de tecnologias */}
-            <Card id="stack" className="backdrop-blur">
-              <CardHeader>
-                <CardTitle>Tecnologias usadas nos mini-projetos</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="overflow-hidden mask-[linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
-                  <div className="flex animate-[marquee_25s_linear_infinite] gap-3 will-change-transform">
-                    {techs.concat(techs).map((t, i) => (
-                      <Badge
-                        key={`${t}-${i}`}
-                        variant="outline"
-                        className="px-3 py-1 text-sm"
-                      >
-                        {t}
-                      </Badge>
-                    ))}
-                  </div>
-                </div>
-                <style jsx>{`
-                  @keyframes marquee {
-                    from {
-                      transform: translateX(0);
-                    }
-                    to {
-                      transform: translateX(-50%);
-                    }
-                  }
-                `}</style>
-              </CardContent>
-            </Card>
+          <Technologies />
+            
 
             {/* Projetos */}
             {/* <section id="projects" className="space-y-4">
