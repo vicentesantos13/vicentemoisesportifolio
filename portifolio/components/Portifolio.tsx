@@ -10,6 +10,7 @@ import { Projects } from "./Projects";
 import { Experiences } from "./Experiences";
 import { Education } from "./Education";
 import { Contact } from "./Contact";
+import { FloatingWhatsAppButton } from "./FloatingWhatsAppButton";
 
 
 
@@ -29,6 +30,8 @@ export default function Page() {
             <Experiences />
             <Education />
             <Contact />
+
+            <FloatingWhatsAppButton />
 
             <footer className="pb-6 text-center text-sm text-slate-500 pt-20">
               © {new Date().getFullYear()} {profile.name}
