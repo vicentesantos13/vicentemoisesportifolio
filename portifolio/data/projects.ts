@@ -1,59 +1,59 @@
 export const projects = [
   {
+    title: "VidaVip Locações - E-commerce de Reservas",
+    description:
+      "Plataforma de reservas de peças decorativas para eventos, com controle de estoque por data, carrinho e painel administrativo.",
+    tags: ["React", "Next.js", "Prisma", "PostgreSQL", "DigitalOcean"],
+    link: "https://vidaviplocacoes.com.br/",
+    repo: "#",
+    image: "/assets/projects/vidavip.png",
+  },
+  {
     title: "Contaí — Gestão Financeira (Fullstack)",
     description:
-      "App pessoal de finanças: lançamentos, categorias e visão de saldo. Fullstack com autenticação e UI limpa.",
+      "App de finanças: lançamentos, categorias, criação de grupos familiares para compartilhamento de receitas e despesas, além da visão de saldo através de gráficos. Fullstack com autenticação e UI limpa.",
     tags: ["Next.js", "Prisma", "PostgreSQL", "Server Actions", "Shadcn"],
     link: "https://contai-w9zq.vercel.app/",
     repo: "#",
-    image:
-      "https://images.unsplash.com/photo-1553729459-efe14ef6055d?q=80&w=1200&auto=format&fit=crop",
+    image: "/assets/projects/contai-reports.png",
   },
+
   {
-    title: "B7Shop — E-commerce demo",
+    title: "B7Web — Painel Administrativo",
     description:
-      "Catálogo, carrinho e fluxo básico de compra. Foco em arquitetura de componentes e estado.",
-    tags: ["React", "Next.js", "State Mgmt"],
+      "Painel administrativo para gerenciar comentários, cursos e usuários.",
+    tags: ["React", "Next.js"],
     link: "#",
     repo: "#",
     image:
-      "https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=1200&auto=format&fit=crop",
+      "/assets/projects/b7webadm.png",
   },
   {
-    title: "B7Tasks — To-do/CRUD",
-    description: "CRUD acessível e testável, com filtros e persistência.",
-    tags: ["React", "Next.js", "CRUD"],
+    title: "B7Web",
+    description: "Plataforma educacional para aprendizado de programação.",
+    tags: ["React", "Next.js"],
     link: "#",
     repo: "#",
     image:
-      "https://images.unsplash.com/photo-1556761175-4b46a572b786?q=80&w=1200&auto=format&fit=crop",
+      "/assets/projects/b7webhome.png",
   },
   {
-    title: "B7Gallery — Grid responsivo",
-    description: "Galeria responsiva com lazy-loading e layout Masonry.",
-    tags: ["React", "Next.js", "UX"],
+    title: "B7Web — Exercícios com IA",
+    description: "Aplicação para geração de exercícios de programação utilizando inteligência artificial.",
+    tags: ["React", "Next.js", "OpenAI"],
     link: "#",
     repo: "#",
     image:
-      "https://images.unsplash.com/photo-1520975922284-9d58a0dc1a29?q=80&w=1200&auto=format&fit=crop",
+      "/assets/projects/b7webAI.png",
   },
   {
-    title: "B7NPS — Coleta de feedback",
-    description: "Formulário e dashboard simples para NPS/feedback.",
-    tags: ["React", "Next.js", "Forms"],
-    link: "#",
-    repo: "#",
-    image:
-      "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1200&auto=format&fit=crop",
-  },
-  {
-    title: "B7 Mini Projects (pacote)",
+    title: "CineB7 - Catálogo de Filmes",
     description:
-      "Coleção de pequenos projetos feitos no trabalho: B7Store, B7Car, B7Form, B7Clima, B7Uploads, SalesPage, Finance, to-do list e outros.",
-    tags: ["React", "Next.js", "Prática"],
+      "Aplicação que consome a API do TMDB para exibir um catálogo de filmes, usando Tanstack Query para gerenciamento de estado e cache.",
+    tags: ["React", "Next.js", "Tanstack", "Prática"],
     link: "#",
     repo: "#",
     image:
-      "https://images.unsplash.com/photo-1581091014534-06d3df9b6f14?q=80&w=1200&auto=format&fit=crop",
+      "/assets/projects/cineB7.png",
   },
 ];

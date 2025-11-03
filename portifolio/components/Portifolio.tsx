@@ -2,44 +2,17 @@
 
 import { useState } from "react";
 
-// shadcn/ui
 
 import { Header } from "./Header";
 import { profile } from "@/data/profile";
 import { Hero } from "./Hero";
 import { Technologies } from "./Technologies";
+import { Projects } from "./Projects";
 
 // ===== Dados =====
 
 
-const projects = [
-  {
-    title: "Contaí — Gestão Financeira (Fullstack)",
-    description:
-      "App de finanças com lançamentos, categorias e visão de saldo. Fullstack com autenticação e UI limpa.",
-    tags: ["Next.js", "Prisma", "PostgreSQL", "Server Actions", "Shadcn"],
-    link: "https://contai-w9zq.vercel.app/",
-    image:
-      "https://images.unsplash.com/photo-1553729459-efe14ef6055d?q=80&w=1400&auto=format&fit=crop",
-  },
-  {
-    title: "B7Shop — E-commerce demo",
-    description:
-      "Catálogo, carrinho e fluxo básico de compra. Foco em arquitetura de componentes e estado.",
-    tags: ["React", "Next.js"],
-    link: "#",
-    image:
-      "https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=1400&auto=format&fit=crop",
-  },
-  {
-    title: "B7Tasks — To-do/CRUD",
-    description: "CRUD acessível e testável, com filtros e persistência.",
-    tags: ["React", "Next.js"],
-    link: "#",
-    image:
-      "https://images.unsplash.com/photo-1556761175-4b46a572b786?q=80&w=1400&auto=format&fit=crop",
-  },
-];
+
 
 
 
@@ -97,52 +70,10 @@ export default function Page() {
           {/* Coluna de conteúdo */}
           <main className="">
           <Hero />
+          <Projects />
           <Technologies />
-            
 
-            {/* Projetos */}
-            {/* <section id="projects" className="space-y-4">
-              <SectionTitle>Projetos em destaque</SectionTitle>
-              {projects.map((p) => (
-                <Link
-                  key={p.title}
-                  href={p.link}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="group block"
-                >
-                  <Card className="hover:shadow-xl transition backdrop-blur">
-                    <CardContent className="p-4">
-                      <div className="grid gap-4 md:grid-cols-[1fr_280px]">
-                        <div>
-                          <h3 className="text-lg font-semibold">{p.title}</h3>
-                          <p className="mt-1 text-sm text-slate-600 dark:text-slate-300">
-                            {p.description}
-                          </p>
-                          <div className="mt-3 flex flex-wrap gap-2">
-                            {p.tags.map((t) => (
-                              <Badge key={t} variant="outline">
-                                {t}
-                              </Badge>
-                            ))}
-                          </div>
-                        </div>
-                        <div className="overflow-hidden rounded-xl border border-slate-200/60 dark:border-slate-800/60">
-                          <Image
-                            src={p.image}
-                            alt={p.title}
-                            width={560}
-                            height={176}
-                            className="h-44 w-full object-cover transition duration-500 group-hover:scale-[1.03] group-hover:grayscale-0 grayscale"
-                            unoptimized
-                          />
-                        </div>
-                      </div>
-                    </CardContent>
-                  </Card>
-                </Link>
-              ))}
-            </section> */}
+            
 
             {/* Experiência */}
             {/* <Card id="experience" className="backdrop-blur">
