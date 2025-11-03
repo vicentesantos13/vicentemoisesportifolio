@@ -108,35 +108,6 @@ export const Header = ({ setTheme, theme }: Props) => {
                       </>
                     )}
                   </Button>
-                  <Separator
-                    className={`${theme === "dark" ? "" : "bg-black/40"}`}
-                  />
-                  <div className="text-xs text-slate-500">
-                    <div>Contato rápido</div>
-                    <div className="mt-2 flex gap-2">
-                      <Button asChild size="sm" variant="secondary">
-                        <Link href={`mailto:${profile.email}`}>E-mail</Link>
-                      </Button>
-                      <Button asChild size="sm" variant="outline">
-                        <Link
-                          href={profile.linkedin}
-                          target="_blank"
-                          rel="noreferrer"
-                        >
-                          LinkedIn
-                        </Link>
-                      </Button>
-                      <Button asChild size="sm" variant="outline">
-                        <Link
-                          href={profile.github}
-                          target="_blank"
-                          rel="noreferrer"
-                        >
-                          GitHub
-                        </Link>
-                      </Button>
-                    </div>
-                  </div>
                 </div>
               </SheetContent>
             </Sheet>
