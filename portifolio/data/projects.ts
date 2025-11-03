@@ -23,7 +23,7 @@ export const projects = [
     description:
       "Painel administrativo para gerenciar comentários, cursos e usuários.",
     tags: ["React", "Next.js"],
-    link: "#",
+    link: "/",
     repo: "#",
     image:
       "/assets/projects/b7webadm.png",
@@ -32,7 +32,7 @@ export const projects = [
     title: "B7Web",
     description: "Plataforma educacional para aprendizado de programação.",
     tags: ["React", "Next.js"],
-    link: "#",
+    link: "/",
     repo: "#",
     image:
       "/assets/projects/b7webhome.png",
@@ -41,7 +41,7 @@ export const projects = [
     title: "B7Web — Exercícios com IA",
     description: "Aplicação para geração de exercícios de programação utilizando inteligência artificial.",
     tags: ["React", "Next.js", "OpenAI"],
-    link: "#",
+    link: "/",
     repo: "#",
     image:
       "/assets/projects/b7webAI.png",
@@ -51,7 +51,7 @@ export const projects = [
     description:
       "Aplicação que consome a API do TMDB para exibir um catálogo de filmes, usando Tanstack Query para gerenciamento de estado e cache.",
     tags: ["React", "Next.js", "Tanstack", "Prática"],
-    link: "#",
+    link: "/",
     repo: "#",
     image:
       "/assets/projects/cineB7.png",

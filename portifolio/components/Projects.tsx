@@ -11,17 +11,14 @@ export const Projects = () => {
         Projetos em destaque
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        {projects.map((p) => (
-          <Link
-            key={p.title}
-            href={p.link}
-            target="_blank"
-            rel="noreferrer"
-            className="group block h-full"
-          >
+        {projects.map((p) => {
+          const hasLink = p.link && p.link !== "/";
+
+          const wrapperClasses = "group block h-full";
+          const card = (
             <Card className="hover:shadow-xl transition h-full rounded-2xl border border-slate-200/60 bg-white/70 p-5 backdrop-blur dark:border-slate-800/60 dark:bg-slate-900/40">
               <CardContent className="p-4">
-                <div className="grid gap-4 ">
+                <div className="grid gap-4">
                   <div className="overflow-hidden rounded-xl border border-slate-200/60 dark:border-slate-800/60">
                     <Image
                       src={p.image}
@@ -48,8 +45,27 @@ export const Projects = () => {
                 </div>
               </CardContent>
             </Card>
-          </Link>
-        ))}
+          );
+
+          if (!hasLink) {
+            return (
+              <div key={p.title} className={wrapperClasses + " cursor-default"}>
+                {card}
+              </div>
+            );
+          }
+          return (
+            <Link
+              key={p.title}
+              href={p.link}
+              target="_blank"
+              rel="noreferrer"
+              className={wrapperClasses}
+            >
+              {card}
+            </Link>
+          );
+        })}
       </div>
     </section>
   );
