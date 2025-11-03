@@ -9,6 +9,7 @@ import { Hero } from "./Hero";
 import { Technologies } from "./Technologies";
 import { Projects } from "./Projects";
 import { Experiences } from "./Experiences";
+import { Education } from "./Education";
 
 // ===== Dados =====
 
@@ -19,13 +20,7 @@ import { Experiences } from "./Experiences";
 
 
 
-const education = [
-  {
-    title: "Seu Curso — Sua Instituição",
-    period: "Período",
-    details: "Destaque rápido (TCC, projetos, monitoria).",
-  },
-];
+
 
 // ===== UI =====
 function SectionTitle({ children }: { children: React.ReactNode }) {
@@ -52,41 +47,12 @@ export default function Page() {
           <Projects />
           <Technologies />
           <Experiences />
+          <Education />
+
             
 
-            {/* Experiência */}
-            {/* <Card id="experience" className="backdrop-blur">
-               */}
-
             {/* Educação & Certificações */}
-            {/* <Card id="education" className="backdrop-blur">
-              <CardHeader>
-                <CardTitle>Educação & Certificações</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="grid gap-4 md:grid-cols-2">
-                  {education.map((ed) => (
-                    <div
-                      key={ed.title}
-                      className="rounded-xl border border-slate-200/60 p-4 dark:border-slate-800/60"
-                    >
-                      <h3 className="font-medium">{ed.title}</h3>
-                      <p className="text-sm text-slate-600 dark:text-slate-400">
-                        {ed.period}
-                      </p>
-                      <p className="mt-1 text-sm">{ed.details}</p>
-                    </div>
-                  ))}
-                  <div className="rounded-xl border border-slate-200/60 p-4 dark:border-slate-800/60">
-                    <h3 className="font-medium">Certificações</h3>
-                    <ul className="mt-2 list-disc pl-5 text-sm">
-                      <li>Nome da certificação — Órgão (Ano)</li>
-                      <li>Outra certificação relevante — Emissor (Ano)</li>
-                    </ul>
-                  </div>
-                </div>
-              </CardContent>
-            </Card> */}
+            {/*  */}
 
             {/* Contato */}
             {/* <Card id="contact" className="text-center backdrop-blur">

@@ -3,7 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 
 export const Experiences = () => {
   return (
-    <section className="pt-10 mx-2">
+    <section id="experience" className="pt-10 mx-2">
       <Card className="h-max rounded-2xl border border-slate-200/60 bg-white/70 p-5 backdrop-blur dark:border-slate-800/60 dark:bg-slate-900/40">
         <CardHeader>
           <CardTitle>Experiência</CardTitle>
